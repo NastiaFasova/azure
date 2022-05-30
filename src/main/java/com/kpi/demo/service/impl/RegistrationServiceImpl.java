@@ -1,14 +1,13 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.models.Bill;
-import com.epam.demo.models.License;
-import com.epam.demo.models.Role;
-import com.epam.demo.models.Subscription;
-import com.epam.demo.models.User;
-import com.epam.demo.service.LicenseService;
-import com.epam.demo.service.RegistrationService;
-import com.epam.demo.service.RoleService;
-import com.epam.demo.service.UserService;
+import com.kpi.demo.models.Bill;
+import com.kpi.demo.models.License;
+import com.kpi.demo.models.Role;
+import com.kpi.demo.models.Subscription;
+import com.kpi.demo.models.User;
+import com.kpi.demo.service.RegistrationService;
+import com.kpi.demo.service.RoleService;
+import com.kpi.demo.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.crypto.password.PasswordEncoder;

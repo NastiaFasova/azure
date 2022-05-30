@@ -1,8 +1,6 @@
-package com.epam.demo.models.dto.response;
+package com.kpi.demo.models.dto.response;
 
 import lombok.Data;
-
-import javax.persistence.Transient;
 
 @Data
 public class UserResponseDto {
@@ -12,7 +10,4 @@ public class UserResponseDto {
     private String patronymic;
     private String email;
     private String password;
-    private String captcha;
-    private String hiddenCaptcha;
-    private String realCaptcha;
 }

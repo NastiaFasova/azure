@@ -1,6 +1,7 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
-import com.epam.demo.exception.AuthenticationException;
+import com.kpi.demo.models.dto.response.UserResponseDto;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.web.WebAttributes;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,13 +20,14 @@ public class ErrorController {
         HttpSession session = request.getSession(false);
         String errorMessage = null;
         if (session != null) {
-            AuthenticationException ex = (AuthenticationException) session
+            BadCredentialsException ex = (BadCredentialsException) session
                     .getAttribute(WebAttributes.AUTHENTICATION_EXCEPTION);
             if (ex != null) {
                 errorMessage = ex.getMessage();
             }
         }
         model.addAttribute("errorMessage", errorMessage);
+        model.addAttribute("user", new UserResponseDto());
         return "login";
     }
 }

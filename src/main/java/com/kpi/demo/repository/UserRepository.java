@@ -1,6 +1,6 @@
-package com.epam.demo.repository;
+package com.kpi.demo.repository;
 
-import com.epam.demo.models.User;
+import com.kpi.demo.models.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

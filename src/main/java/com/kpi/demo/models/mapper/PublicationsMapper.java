@@ -1,7 +1,7 @@
-package com.epam.demo.models.mapper;
+package com.kpi.demo.models.mapper;
 
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.dto.PublicationsDto;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.dto.PublicationsDto;
 import org.springframework.stereotype.Component;
 import java.util.Set;
 

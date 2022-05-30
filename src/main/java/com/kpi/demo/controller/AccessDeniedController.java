@@ -1,4 +1,4 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

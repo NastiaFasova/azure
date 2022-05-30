@@ -1,67 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layouts/layout_main}"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="UTF-8">
     <title>Bill Management System</title>
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
+    <style>
+        body {
+            background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .pricing-header {
+            max-width: 700px;
+        }
+
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container my-2">
-        <a th:href="@{/topics}" class="navbar-brand" href="#">Topics</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/users}" class="navbar-brand" href="#">Users</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/}" class="navbar-brand" href="#">Publications</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/bill}" class="navbar-brand" href="#">Bill</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/subscription/{email}(email=${#authentication.getPrincipal().getUsername()})}" class="navbar-brand" href="#">Subscription</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/users/likes}" class="navbar-brand" href="#">My shopping-cart</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/logout}" class="navbar-brand" href="#">Logout</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a th:href="@{/register}" class="navbar-brand" href="#">Register</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<div style="margin-top: 40px" class="pricing-header p-3 pb-md-4 mx-auto text-center" layout:fragment="bill_content">
+    <h1 class="display-4 fw-normal">Pricing</h1>
+    <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap
+        example. It’s built with default Bootstrap components and utilities with little customization.</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="container-fluid" layout:fragment="content">
+        <div style="width: 500px; height: 550px; margin: auto" class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Bill</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title" th:text="${bill.amountOfMoney}"><small
+                            class="text-muted fw-light"></small></h1>
+                    <form action="#" th:action="@{/bill}" th:object="${bill}"
+                          method="POST">
+                        <input type="hidden" th:field="*{id}"/>
+                        <input style="margin: auto" type="text" th:field="*{amountOfMoney}" placeholder="Money"
+                               class="form-control mb-4 col-4"/>
+                        <span th:if="${#fields.hasErrors('amountOfMoney')}" th:errors="*{amountOfMoney}"
+                              class="alert alert-danger"></span>
+                        <button style="margin-top: 15px"
+                                type="submit" class="w-100 btn btn-lg btn-primary">Add money</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
-
-
-<div class="container my-2">
-    <h1>Bill</h1>
-
-    <a th:href="@{/bill/update/{id}(id=${bill.id})}" class="btn btn-primary btn-sm mb-3">
-        Add money </a>
-
-    <h2>Money</h2>
-    <p th:text="${bill.amountOfMoney}"> </p>
-
 </div>
 </body>
 </html>

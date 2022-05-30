@@ -1,6 +1,6 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.User;
+import com.kpi.demo.models.User;
 
 public interface RegistrationService {
     User register(User user);

@@ -1,15 +1,14 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
-import com.epam.demo.models.*;
-import com.epam.demo.models.dto.request.ArticleRequestDto;
-import com.epam.demo.models.dto.request.PublicationRequestDto;
-import com.epam.demo.models.dto.request.UserRequestDto;
-import com.epam.demo.service.RoleService;
-import com.epam.demo.service.TopicService;
-import org.springframework.mock.web.MockHttpServletRequest;
+import com.kpi.demo.models.dto.request.ArticleRequestDto;
+import com.kpi.demo.models.dto.request.PublicationRequestDto;
+import com.kpi.demo.models.dto.request.UserRequestDto;
+import com.kpi.demo.service.RoleService;
+import com.kpi.demo.service.TopicService;
+import com.kpi.demo.models.Role;
+import com.kpi.demo.models.Topic;
 import org.springframework.stereotype.Controller;
 import javax.annotation.PostConstruct;
-import javax.servlet.http.HttpServletRequestWrapper;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -47,8 +46,6 @@ public class InjectDataController {
         admin.setEmail("prylipk099@Gmail.com");
         admin.setPassword("admin");
         admin.setSurname("Prylipko");
-        admin.setCaptcha("Prylipko");
-        admin.setHiddenCaptcha("Prylipko");
         admin.setRoles(Set.of(adminRole));
 
         UserRequestDto user = new UserRequestDto();
@@ -56,8 +53,6 @@ public class InjectDataController {
         user.setEmail("prylipk09@gmail.com");
         user.setPassword("user1234");
         user.setSurname("Prylipko");
-        user.setCaptcha("Prylipko");
-        user.setHiddenCaptcha("Prylipko");
         user.setRoles(Set.of(userRole));
         registerController.register(user, null);
 
@@ -292,9 +287,6 @@ public class InjectDataController {
                 LocalDate.of(2021, 4, 21));
         ArticleRequestDto article3 = new ArticleRequestDto("Title3", "Some text...",
                 LocalDate.of(2021, 4, 21));
-        articleController.saveIntoPublication(article2, null, 2L);
-        articleController.saveIntoPublication(article3, null, 3L);
-        articleController.saveIntoPublication(article, null, 1L);
 
     }
 }

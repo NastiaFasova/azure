@@ -1,18 +1,18 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.Topic;
-import com.epam.demo.models.dto.TopicsDto;
-import com.epam.demo.models.dto.request.PublicationRequestDto;
-import com.epam.demo.models.dto.response.PublicationResponseDto;
-import com.epam.demo.models.mapper.PublicationMapper;
-import com.epam.demo.models.mapper.TopicsMapper;
-import com.epam.demo.service.PublicationService;
-import com.epam.demo.service.SubscriptionService;
-import com.epam.demo.service.TopicService;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.Topic;
+import com.kpi.demo.models.dto.TopicsDto;
+import com.kpi.demo.models.dto.request.PublicationRequestDto;
+import com.kpi.demo.models.dto.response.PublicationResponseDto;
+import com.kpi.demo.models.mapper.PublicationMapper;
+import com.kpi.demo.models.mapper.TopicsMapper;
+import com.kpi.demo.service.PublicationService;
+import com.kpi.demo.service.SubscriptionService;
+import com.kpi.demo.service.TopicService;
 import java.util.List;
 
-import com.epam.demo.service.UserService;
+import com.kpi.demo.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

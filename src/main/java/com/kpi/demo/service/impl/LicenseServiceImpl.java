@@ -1,8 +1,8 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.models.License;
-import com.epam.demo.repository.LicenseRepository;
-import com.epam.demo.service.LicenseService;
+import com.kpi.demo.models.License;
+import com.kpi.demo.repository.LicenseRepository;
+import com.kpi.demo.service.LicenseService;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

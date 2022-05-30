@@ -1,6 +1,6 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.Publication;
+import com.kpi.demo.models.Publication;
 import org.springframework.data.domain.Page;
 
 public interface PublicationService {

@@ -1,9 +1,9 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
-import com.epam.demo.models.dto.request.TopicRequestDto;
-import com.epam.demo.models.dto.response.TopicResponseDto;
-import com.epam.demo.models.mapper.TopicMapper;
-import com.epam.demo.service.TopicService;
+import com.kpi.demo.models.dto.request.TopicRequestDto;
+import com.kpi.demo.models.dto.response.TopicResponseDto;
+import com.kpi.demo.models.mapper.TopicMapper;
+import com.kpi.demo.service.TopicService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

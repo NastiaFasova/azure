@@ -1,6 +1,6 @@
-package com.epam.demo.models.dto.request;
+package com.kpi.demo.models.dto.request;
 
-import com.epam.demo.models.Topic;
+import com.kpi.demo.models.Topic;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

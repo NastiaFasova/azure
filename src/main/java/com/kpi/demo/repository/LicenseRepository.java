@@ -1,6 +1,6 @@
-package com.epam.demo.repository;
+package com.kpi.demo.repository;
 
-import com.epam.demo.models.License;
+import com.kpi.demo.models.License;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LicenseRepository extends JpaRepository<License, Long> {

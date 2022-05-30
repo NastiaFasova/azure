@@ -1,11 +1,11 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.exception.NotFoundByIdException;
-import com.epam.demo.models.Article;
-import com.epam.demo.models.Publication;
-import com.epam.demo.repository.ArticleRepository;
-import com.epam.demo.repository.PublicationRepository;
-import com.epam.demo.service.ArticleService;
+import com.kpi.demo.exception.NotFoundByIdException;
+import com.kpi.demo.models.Article;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.repository.ArticleRepository;
+import com.kpi.demo.repository.PublicationRepository;
+import com.kpi.demo.service.ArticleService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;

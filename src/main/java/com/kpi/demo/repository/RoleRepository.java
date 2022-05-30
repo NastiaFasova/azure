@@ -1,6 +1,6 @@
-package com.epam.demo.repository;
+package com.kpi.demo.repository;
 
-import com.epam.demo.models.Role;
+import com.kpi.demo.models.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

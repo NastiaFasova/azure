@@ -1,4 +1,4 @@
-package com.epam.demo.models.dto.response;
+package com.kpi.demo.models.dto.response;
 
 import lombok.Data;
 import java.time.LocalDate;

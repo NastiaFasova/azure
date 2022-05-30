@@ -1,4 +1,4 @@
-package com.epam.demo.validation;
+package com.kpi.demo.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

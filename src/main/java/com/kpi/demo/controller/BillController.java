@@ -1,10 +1,10 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
-import com.epam.demo.models.User;
-import com.epam.demo.models.dto.BillDto;
-import com.epam.demo.models.mapper.BillMapper;
-import com.epam.demo.service.BillService;
-import com.epam.demo.service.UserService;
+import com.kpi.demo.models.User;
+import com.kpi.demo.models.dto.BillDto;
+import com.kpi.demo.models.mapper.BillMapper;
+import com.kpi.demo.service.BillService;
+import com.kpi.demo.service.UserService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

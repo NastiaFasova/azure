@@ -1,4 +1,4 @@
-package com.epam.demo.models;
+package com.kpi.demo.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;

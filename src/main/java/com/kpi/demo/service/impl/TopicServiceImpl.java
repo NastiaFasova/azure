@@ -1,11 +1,10 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.exception.NotFoundByIdException;
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.Topic;
-import com.epam.demo.repository.PublicationRepository;
-import com.epam.demo.repository.TopicRepository;
-import com.epam.demo.service.TopicService;
+import com.kpi.demo.exception.NotFoundByIdException;
+import com.kpi.demo.models.Topic;
+import com.kpi.demo.repository.PublicationRepository;
+import com.kpi.demo.repository.TopicRepository;
+import com.kpi.demo.service.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

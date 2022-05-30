@@ -1,13 +1,12 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.models.Bill;
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.Subscription;
-import com.epam.demo.models.User;
-import com.epam.demo.repository.BillRepository;
-import com.epam.demo.repository.SubscriptionRepository;
-import com.epam.demo.repository.UserRepository;
-import org.junit.Assert;
+import com.kpi.demo.models.Bill;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.Subscription;
+import com.kpi.demo.models.User;
+import com.kpi.demo.repository.BillRepository;
+import com.kpi.demo.repository.SubscriptionRepository;
+import com.kpi.demo.repository.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,12 +14,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
-import java.util.ArrayList;
+
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @SpringBootTest
 @RunWith(MockitoJUnitRunner.class)

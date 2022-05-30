@@ -1,15 +1,15 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.exception.NotEnoughMoneyException;
-import com.epam.demo.exception.NotFoundByIdException;
-import com.epam.demo.models.Bill;
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.Subscription;
-import com.epam.demo.models.User;
-import com.epam.demo.repository.PublicationRepository;
-import com.epam.demo.repository.SubscriptionRepository;
-import com.epam.demo.repository.UserRepository;
-import com.epam.demo.service.SubscriptionService;
+import com.kpi.demo.exception.NotEnoughMoneyException;
+import com.kpi.demo.exception.NotFoundByIdException;
+import com.kpi.demo.models.Bill;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.Subscription;
+import com.kpi.demo.models.User;
+import com.kpi.demo.repository.PublicationRepository;
+import com.kpi.demo.repository.SubscriptionRepository;
+import com.kpi.demo.repository.UserRepository;
+import com.kpi.demo.service.SubscriptionService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

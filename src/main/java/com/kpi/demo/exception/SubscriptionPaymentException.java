@@ -1,4 +1,4 @@
-package com.epam.demo.exception;
+package com.kpi.demo.exception;
 
 public class SubscriptionPaymentException extends RuntimeException {
     public SubscriptionPaymentException(String message) {

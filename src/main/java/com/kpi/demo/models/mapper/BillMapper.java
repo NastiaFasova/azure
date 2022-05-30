@@ -1,7 +1,7 @@
-package com.epam.demo.models.mapper;
+package com.kpi.demo.models.mapper;
 
-import com.epam.demo.models.Bill;
-import com.epam.demo.models.dto.BillDto;
+import com.kpi.demo.models.Bill;
+import com.kpi.demo.models.dto.BillDto;
 import org.springframework.stereotype.Component;
 
 @Component

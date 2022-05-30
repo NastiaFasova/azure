@@ -1,6 +1,6 @@
-package com.epam.demo.repository;
+package com.kpi.demo.repository;
 
-import com.epam.demo.models.Bill;
+import com.kpi.demo.models.Bill;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

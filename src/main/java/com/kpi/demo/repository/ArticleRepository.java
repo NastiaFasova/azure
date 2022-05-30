@@ -1,12 +1,11 @@
-package com.epam.demo.repository;
+package com.kpi.demo.repository;
 
-import com.epam.demo.models.Article;
+import com.kpi.demo.models.Article;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import java.util.List;
 
 @Repository
 public interface ArticleRepository extends JpaRepository<Article, Long> {

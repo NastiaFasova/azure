@@ -1,6 +1,6 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.License;
+import com.kpi.demo.models.License;
 
 public interface LicenseService {
     boolean isExpired();

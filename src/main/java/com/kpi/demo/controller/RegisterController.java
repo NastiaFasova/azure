@@ -1,11 +1,9 @@
-package com.epam.demo.controller;
+package com.kpi.demo.controller;
 
-import cn.apiclub.captcha.Captcha;
-import com.epam.demo.captcha.CaptchaUtil;
-import com.epam.demo.models.dto.request.UserRequestDto;
-import com.epam.demo.models.dto.response.UserResponseDto;
-import com.epam.demo.models.mapper.UserMapper;
-import com.epam.demo.service.RegistrationService;
+import com.kpi.demo.models.dto.request.UserRequestDto;
+import com.kpi.demo.models.dto.response.UserResponseDto;
+import com.kpi.demo.models.mapper.UserMapper;
+import com.kpi.demo.service.RegistrationService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -42,12 +40,12 @@ public class RegisterController {
     @GetMapping("/login")
     public String showNewLoginForm(Model model) {
         model.addAttribute("user", new UserResponseDto());
-        model.addAttribute("error", new UserResponseDto());
         return "login";
     }
 
     @GetMapping("/register")
-    public String showNewRegisterForm(@ModelAttribute("user") UserResponseDto user) {
+    public String showNewRegisterForm(Model model) {
+        model.addAttribute("user", new UserResponseDto());
         return "register";
     }
 }

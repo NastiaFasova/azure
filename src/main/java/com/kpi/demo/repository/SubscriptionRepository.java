@@ -1,9 +1,8 @@
-package com.epam.demo.repository;
+package com.kpi.demo.repository;
 
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.Subscription;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.Subscription;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;

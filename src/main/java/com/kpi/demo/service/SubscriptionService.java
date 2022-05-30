@@ -1,8 +1,9 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.Subscription;
-import com.epam.demo.models.User;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.Subscription;
+import com.kpi.demo.models.User;
+
 import java.util.List;
 import java.util.Set;
 

@@ -1,7 +1,7 @@
-package com.epam.demo.models.dto.response;
+package com.kpi.demo.models.dto.response;
 
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.User;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.User;
 import lombok.Data;
 import java.util.HashSet;
 import java.util.Set;

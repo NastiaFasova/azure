@@ -1,9 +1,9 @@
-package com.epam.demo.models.mapper;
+package com.kpi.demo.models.mapper;
 
-import com.epam.demo.models.Article;
-import com.epam.demo.models.dto.ArticlesDto;
+import com.kpi.demo.models.Article;
+import com.kpi.demo.models.dto.ArticlesDto;
 import org.springframework.stereotype.Component;
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Component

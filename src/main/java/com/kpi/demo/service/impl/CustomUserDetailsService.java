@@ -1,17 +1,15 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.exception.AuthenticationException;
-import com.epam.demo.models.User;
-import com.epam.demo.service.LicenseService;
-import com.epam.demo.service.UserService;
+import com.kpi.demo.exception.AuthenticationException;
+import com.kpi.demo.models.User;
+import com.kpi.demo.service.LicenseService;
+import com.kpi.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import javax.servlet.http.HttpServletRequest;
 
 @Service
 @Primary

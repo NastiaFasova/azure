@@ -1,6 +1,6 @@
-package com.epam.demo.models.dto;
+package com.kpi.demo.models.dto;
 
-import com.epam.demo.models.User;
+import com.kpi.demo.models.User;
 import lombok.Data;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;

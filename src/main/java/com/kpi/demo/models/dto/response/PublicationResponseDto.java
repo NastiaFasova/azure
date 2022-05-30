@@ -1,6 +1,6 @@
-package com.epam.demo.models.dto.response;
+package com.kpi.demo.models.dto.response;
 
-import com.epam.demo.models.Topic;
+import com.kpi.demo.models.Topic;
 import lombok.Data;
 
 @Data

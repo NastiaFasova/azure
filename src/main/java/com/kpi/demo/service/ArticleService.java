@@ -1,6 +1,6 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.Article;
+import com.kpi.demo.models.Article;
 import org.springframework.data.domain.Page;
 import java.util.List;
 

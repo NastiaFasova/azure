@@ -1,6 +1,6 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.Topic;
+import com.kpi.demo.models.Topic;
 import java.util.List;
 
 public interface TopicService {

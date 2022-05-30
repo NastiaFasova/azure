@@ -1,6 +1,7 @@
-package com.epam.demo.service;
+package com.kpi.demo.service;
 
-import com.epam.demo.models.Bill;
+import com.kpi.demo.models.Bill;
+
 import java.util.List;
 
 public interface BillService {

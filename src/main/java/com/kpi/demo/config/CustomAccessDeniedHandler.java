@@ -1,4 +1,4 @@
-package com.epam.demo.config;
+package com.kpi.demo.config;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

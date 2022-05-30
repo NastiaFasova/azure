@@ -1,6 +1,6 @@
-package com.epam.demo.models.dto.request;
+package com.kpi.demo.models.dto.request;
 
-import com.epam.demo.validation.DateValidation;
+import com.kpi.demo.validation.DateValidation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

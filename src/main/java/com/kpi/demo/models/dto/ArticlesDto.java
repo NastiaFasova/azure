@@ -1,6 +1,6 @@
-package com.epam.demo.models.dto;
+package com.kpi.demo.models.dto;
 
-import com.epam.demo.models.Article;
+import com.kpi.demo.models.Article;
 import lombok.Data;
 import java.util.List;
 

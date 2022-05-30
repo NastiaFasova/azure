@@ -1,9 +1,9 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.models.Article;
-import com.epam.demo.models.Publication;
-import com.epam.demo.repository.ArticleRepository;
-import com.epam.demo.repository.PublicationRepository;
+import com.kpi.demo.models.Article;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.repository.ArticleRepository;
+import com.kpi.demo.repository.PublicationRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

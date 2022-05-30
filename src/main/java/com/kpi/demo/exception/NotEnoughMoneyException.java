@@ -1,4 +1,4 @@
-package com.epam.demo.exception;
+package com.kpi.demo.exception;
 
 public class NotEnoughMoneyException extends RuntimeException {
     public NotEnoughMoneyException(String message) {

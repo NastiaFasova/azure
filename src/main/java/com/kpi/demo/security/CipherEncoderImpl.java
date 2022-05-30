@@ -1,4 +1,4 @@
-package com.epam.demo.security;
+package com.kpi.demo.security;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

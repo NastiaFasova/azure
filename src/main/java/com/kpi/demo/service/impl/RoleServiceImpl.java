@@ -1,9 +1,9 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.exception.NotFoundByIdException;
-import com.epam.demo.models.Role;
-import com.epam.demo.repository.RoleRepository;
-import com.epam.demo.service.RoleService;
+import com.kpi.demo.exception.NotFoundByIdException;
+import com.kpi.demo.models.Role;
+import com.kpi.demo.repository.RoleRepository;
+import com.kpi.demo.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;

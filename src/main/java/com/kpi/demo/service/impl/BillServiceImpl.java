@@ -1,11 +1,11 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.exception.NotFoundByIdException;
-import com.epam.demo.models.Bill;
-import com.epam.demo.models.User;
-import com.epam.demo.repository.BillRepository;
-import com.epam.demo.repository.UserRepository;
-import com.epam.demo.service.BillService;
+import com.kpi.demo.exception.NotFoundByIdException;
+import com.kpi.demo.models.Bill;
+import com.kpi.demo.models.User;
+import com.kpi.demo.repository.BillRepository;
+import com.kpi.demo.repository.UserRepository;
+import com.kpi.demo.service.BillService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

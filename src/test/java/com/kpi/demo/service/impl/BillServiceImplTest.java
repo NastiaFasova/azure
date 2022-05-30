@@ -1,9 +1,9 @@
-package com.epam.demo.service.impl;
+package com.kpi.demo.service.impl;
 
-import com.epam.demo.models.Bill;
-import com.epam.demo.models.User;
-import com.epam.demo.repository.BillRepository;
-import com.epam.demo.repository.UserRepository;
+import com.kpi.demo.models.Bill;
+import com.kpi.demo.models.User;
+import com.kpi.demo.repository.BillRepository;
+import com.kpi.demo.repository.UserRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

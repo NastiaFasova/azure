@@ -1,8 +1,8 @@
-package com.epam.demo.models.mapper;
+package com.kpi.demo.models.mapper;
 
-import com.epam.demo.models.Publication;
-import com.epam.demo.models.dto.request.PublicationRequestDto;
-import com.epam.demo.models.dto.response.PublicationResponseDto;
+import com.kpi.demo.models.Publication;
+import com.kpi.demo.models.dto.request.PublicationRequestDto;
+import com.kpi.demo.models.dto.response.PublicationResponseDto;
 import org.springframework.stereotype.Component;
 
 @Component
